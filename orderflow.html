@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<style> 
+p{
+background-color: red; 
+border: 1px solid black;
+font-family: monospace;
+margin-left:9px;
+padding: 9px 9px 9px 9px;
+
+}
+body {
+  color: black;
+  }
+  .red-title {
+    color: red;
+    font-family: monospace;
+    }
+  .black-title {
+    color: red;
+    font-family: monospace;
+    }
+  .red-updates {
+    color: red;
+    font-family: monospace;
+    font-size: 14px;
+    }
+  .black-title {
+    color: black;
+    font-family: monospace;
+    }
+  .white-p {
+    color: white;
+    font-family: monospace;
+    }
+  .img-logo {
+    width: 96px;
+    }
+</style> 
+</head> 
+<body> 
+
+<!-- Here are two ways to specify the image size. The 1st uses classes. The 2nd uses styles.-->
+
+<img class="img-logo" src="http://www.myiconfinder.com/uploads/iconsets/256-256-cb70a81a2f3e043ffbb6dceadad56bfc-Vodafone.png" alt="Logo"/>
+<img src="http://www.myiconfinder.com/uploads/iconsets/256-256-cb70a81a2f3e043ffbb6dceadad56bfc-Vodafone.png" style="float:right; 
+width:96px;height:96px;"/>
+
+<!-- Title, using <span> to separate colours in the same line of text -->
+<h1 class="red-title">
+  View Order <span class='black-title'>Please wait...</span>
+</h1>
+<hr />
+<div id='stages'>
+
+<p>01 - Pending Status.</p> 
+<p>02 - Processed by Vodafone.</p> 
+<p>03 - Sent To Openreach.</p>
+<p>04 - Assigned To Engineer.</p>
+<p class="white-p"><strong>Work Management Executing.</strong> <br> This is one of the final order stages.<br> Please keep your end customer informed.
+</p>
+</div>
+<hr />
+<div class='red-updates'>
+  <ol>
+    <li>
+      Your appointment will be confirmed when Openreach send the KCI-2
+    </li>
+    <li>
+      Please view the portal for further updates
+    </li>
+    
+  </ol>
+</div>
+
+<div>
+  <form action="/submit-url">
+    <label><input type="radio" name="sub_1" checked> Escalated</label>
+    <label><input type="radio" name="sub_1"> Standard</label><br>
+    <label><input type="checkbox" name="sub_2" checked> WLR3</label>
+    <label><input type="checkbox" name="sub_2"> FTTC</label>
+    <label><input type="checkbox" name="sub_3"> SIM2 Delivery</label><br><br>
+    <input type="text" placeholder="Enter URL" required>
+    <button type="submit">Submit Order</button>
+  </form>
+  
+  <hr />
+  
+  <p>
+    
+  For further support - please contact our support desk. <br />
+  <span class='white-p'>The team will be <em>happy</em> to ignore your plea for help.</span>
+  </p>
+
+</div>
+
+</body> 
+</html>
